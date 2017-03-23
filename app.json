@@ -1,0 +1,58 @@
+{
+    "pages": [
+        "pages/welcome/welcome",
+        "pages/post/post",
+        "pages/post/post-detail/post-detail",
+        "pages/post/post-comment/post-comment",
+        "pages/movie/movie",
+        "pages/movie/more-movie/more-movie",
+        "pages/movie/movie-detail/movie-detail",
+        "pages/setting/setting",
+        "pages/setting/device/device",
+        "pages/setting/document/download/download",
+        "pages/setting/open-api/login/login",
+        "pages/setting/open-api/check/check",
+        "pages/setting/open-api/decrypted/decrypted",
+        "pages/setting/open-api/tpl-message/tpl-message",
+        "pages/setting/open-api/wx-pay/wx-pay",
+        "pages/setting/others/wx-key/wx-key",
+        "pages/setting/others/scroll-view/scroll-view"
+    ],
+    "window": {
+        "navigationBarBackgroundColor": "#4A6141",
+        "backgroundColor": "#4A6141"
+    },
+    "tabBar": {
+        "borderStyle": "white",
+        "selectedColor": "#4A6141",
+        "color": "#333",
+        "backgroundColor": "#fff",
+        "position": "bottom",
+        "list": [
+            {
+                "pagePath": "pages/post/post",
+                "text": "文字",
+                "iconPath": "images/icon/wx_app_news.png",
+                "selectedIconPath": "images/icon/wx_app_news@HL.png"
+            },
+            {
+                "pagePath": "pages/movie/movie",
+                "text": "光影",
+                "iconPath": "images/icon/wx_app_movie.png",
+                "selectedIconPath": "images/icon/wx_app_movie@HL.png"
+            },
+            {
+                "pagePath": "pages/setting/setting",
+                "text": "设置",
+                "iconPath": "images/icon/wx_app_setting.png",
+                "selectedIconPath": "images/icon/wx_app_setting@HL.png"
+            }
+        ]
+    },
+    "networkTimeout": {
+        "request": 20000,
+        "connectSocket": 20000,
+        "uploadFile": 20000,
+        "downloadFile": 20000
+    }
+}

@@ -1,0 +1,17 @@
+input {
+  height: 100rpx;
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-bottom: 30rpx;
+}
+
+button {
+  background-color: #4a6141;
+}
+
+picker {
+  width: 100%;
+  background-color: #f6f6f6;
+  margin-bottom: 30rpx;
+  padding: 19rpx 26rpx;
+}

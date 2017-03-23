@@ -1,0 +1,26 @@
+<view class="container">
+    <view class="category-item">
+        <block wx:for="{{phoneInfo}}">
+            <view class="detail-item">
+                <text>{{item.key}}</text>
+                <text>{{item.val}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="category-item">
+        <block wx:for="{{softInfo}}">
+            <view class="detail-item">
+                <text>{{item.key}}</text>
+                <text>{{item.val}}</text>
+            </view>
+        </block>
+    </view>
+    <view class="category-item">
+        <block wx:for="{{screenInfo}}">
+            <view class="detail-item">
+                <text>{{item.key}}</text>
+                <text>{{item.val}}</text>
+            </view>
+        </block>
+    </view>
+</view>

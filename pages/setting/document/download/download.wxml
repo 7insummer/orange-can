@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="file-type-head">
+    <text>文件类型</text>
+  </view>
+  <view class="category-item">
+    <block wx:for="{{fileTypeList}}">
+      <view class="detail-item" catchtap="downloadFile" data-type="{{item.type}}">
+        <image src="{{item.iconurl}}"></image>
+        <text>{{item.title}}</text>
+        <view class="detail-item-btn"></view>
+      </view>
+    </block>
+  </view>
+</view>

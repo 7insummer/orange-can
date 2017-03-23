@@ -1,0 +1,11 @@
+<form bindsubmit="formSubmit" report-submit="true">
+  <input name="place" type="text" placeholder="购买地点：" />
+  <picker name="date" mode="date" value="{{date}}"
+    start="2017-1-1" end="2020-12-31" 
+    bindchange="bindDateChange">
+        购买时间: {{date}}
+  </picker>
+  <input name="name" type="text" placeholder="物品名称:" />
+  <input name="id" type="text" placeholder="交易单号：" />
+  <button formType="submit">Submit</button>
+</form>

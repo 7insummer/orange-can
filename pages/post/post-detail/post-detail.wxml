@@ -1,0 +1,31 @@
+<view class="container">
+  <image class="head-image" src="{{isPlayingMusic?post.music.coverImg:post.postImg}}"></image>
+  <image catchtap="onMusicTap" class="music" 
+  src="{{isPlayingMusic?'/images/icon/wx_app_music_stop.png':'/images/icon/wx_app_music_start.png'}}">
+  </image>
+  <text class="title">{{post.title}}</text>
+  <view class="author-date">
+    <view class="author-box">
+      <image class="avatar" src="{{post.avatar}}"></image>
+      <text class="author">{{post.author}}</text>
+    </view>
+    <text class="date">{{post.dateTime}}</text>
+  </view>
+  <text class="detail">{{post.detail}}</text>
+</view>
+<view class="tool">
+  <view class="tool-item" catchtap="onUpTap" data-post-id="{{post.postId}}">
+     <image animation="{{animationUp}}" wx:if="{{post.upStatus}}" src="/images/icon/wx_app_liked.png" />
+     <image animation="{{animationUp}}" wx:else src="/images/icon/wx_app_like.png" />
+    <text>{{post.upNum}}</text>
+  </view>
+  <view class="tool-item comment" catchtap="onCommentTap" data-post-id="{{post.postId}}">
+    <image src="/images/icon/wx_app_message.png"></image>
+    <text>{{post.commentNum}}</text>
+  </view>
+  <view class="tool-item" catchtap="onCollectionTap" data-post-id="{{post.postId}}">
+    <image wx:if="{{post.collectionStatus}}" src="/images/icon/wx_app_collected.png" />
+    <image wx:else src="/images/icon/wx_app_collect.png" />
+    <text>{{post.collectionNum}}</text>
+  </view>
+</view>

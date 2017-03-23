@@ -1,0 +1,28 @@
+<view >
+  <view >vertical scroll</view>
+  <scroll-view class="scroll_view_V" scroll-y="true" style="height: 200px;"
+   bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" 
+   scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view id="green" class="item-size green"></view>
+    <view id="red" class="item-size red"></view>
+    <view id="yellow" class="item-size yellow"></view>
+    <view id="blue" class="item-size blue"></view>
+    <view id="SlateGray" class="item-size SlateGray"></view>
+    <view id="GoldEnrod" class="item-size GoldEnrod"></view>
+  </scroll-view>
+  <view class="btn-area">
+    <button size="mini" bindtap="tap">click me to scroll into view </button>
+    <button size="mini" bindtap="tapMove">click me to scroll</button>
+  </view>
+</view>
+<view >
+  <view >horizontal scroll</view>
+  <scroll-view class="scroll_view_H" scroll-x="true" style="width: 100%">
+    <view id="green" class="item-size green item"></view>
+    <view id="red" class="item-size red item"></view>
+    <view id="yellow" class="item-size yellow item"></view>
+    <view id="blue" class="item-size blue item"></view>
+    <view id="SlateGray" class="item-size SlateGray item"></view>
+    <view id="GoldEnrod" class="item-size GoldEnrod item"></view>
+  </scroll-view>
+</view>

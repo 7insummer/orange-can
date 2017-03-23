@@ -1,0 +1,271 @@
+.comment-detail-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow-y: hidden;
+}
+
+.comment-main-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 100rpx;
+  right: 0;
+  overflow-y: auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+.comment-item {
+  margin: 20rpx 0 20rpx 24rpx;
+  padding: 24rpx 24rpx 24rpx 0;
+  border-bottom: 1rpx solid #f2e7e1;
+}
+
+.comment-item:last-child {
+  border-bottom: none;
+}
+
+.comment-title {
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 28rpx;
+  color: #212121;
+  border-bottom: 1px solid #ccc;
+  margin-left: 24rpx;
+  padding: 8rpx 0;
+  font-family: Microsoft YaHei;
+}
+
+.comment-item-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment-item-header .left-img image {
+  height: 80rpx;
+  width: 80rpx;
+}
+
+.comment-item-header .right-user {
+  margin-left: 30rpx;
+  line-height: 80rpx;
+}
+
+.comment-item-header .right-user text {
+  font-size: 26rpx;
+  color: #212121;
+}
+
+.comment-body {
+  font-size: 26rpx;
+  line-height: 26rpx;
+  color: #666;
+  padding: 10rpx 0;
+}
+
+.comment-txt text {
+  line-height: 50rpx;
+}
+
+.comment-img {
+  margin: 10rpx 0;
+}
+
+.comment-img image {
+  max-width: 32%;
+  margin-right: 10rpx;
+  height: 220rpx;
+  width: 220rpx;
+}
+
+.comment-voice-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 200rpx;
+  height: 64rpx;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  border-radius: 6rpx;
+}
+
+.comment-voice-item .voice-play {
+  height: 64rpx;
+  width: 64rpx;
+}
+
+
+.comment-voice-item text {
+  margin-left: 60rpx;
+  color: #212121;
+  font-size: 22rpx;
+}
+
+.comment-time {
+  margin-top: 10rpx;
+  color: #ccc;
+  font-size: 24rpx;
+}
+
+
+/*******************评论框**********************/
+.input-box{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    right: 0;
+    background-color: #EAE8E8;
+    border-top:1rpx solid #D5D5D5;
+    min-height: 100rpx;
+    z-index: 1000;
+}
+.input-box .send-msg-box{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 20rpx 0;
+}
+.input-box .send-more-box{
+    margin: 20rpx 35rpx 35rpx 35rpx;
+}
+.input-box .input-item{
+    margin:0 5rpx;
+    flex:1;
+    width: 0%;
+    position: relative;
+}
+.input-box .input-item .comment-icon{
+    position: absolute;
+    left:5rpx;
+    top:6rpx;
+}
+
+.input-box .input-item .input{
+    border: 1rpx solid #D5D5D5;
+    background-color: #fff;
+    border-radius: 3px;
+    line-height: 65rpx;
+    margin:5rpx 0 5rpx 75rpx ;
+    font-size: 24rpx;
+    color: #838383;
+    padding: 0 2%;
+}
+.input-box .input-item .keyboard-input{
+    width: auto;
+    max-height: 500rpx;
+    height: 65rpx;
+    word-break:break-all;
+    overflow:auto;
+}
+.input-box .input-item .speak-input{
+    text-align: center;
+    color: #212121;
+    height: 65rpx;
+}
+
+.input-box .input-item .recoding{
+    background-color: #ccc;
+}
+
+.input-box .input-item .comment-icon.speak-icon{
+    height: 62rpx;
+    width: 62rpx;
+}
+.input-box .input-item .comment-icon.keyboard-icon{
+    height: 60rpx;
+    width: 60rpx;
+    left:6rpx;
+}
+.input-box .add-icon{
+    margin:0 5rpx;
+    height: 65rpx;
+    width: 65rpx;
+    transform: scale(0.9);
+    margin-top: 2px;
+}
+.input-box .submit-btn{
+    font-size: 24rpx;
+    margin-top: 5rpx;
+    margin-right: 8rpx;
+    line-height: 60rpx;
+    width: 120rpx;
+    height: 60rpx;
+    background-color: #4A6141;
+    border-radius:5rpx;
+    color: #fff;
+    text-align: center;
+    font-family:Microsoft Yahei;
+}
+
+
+.send-more-box .more-btn-item{
+    display: inline-block;
+    width: 110rpx;
+    height: 145rpx;
+    margin-right: 35rpx;
+    text-align: center;
+}
+
+.more-btn-main{
+    width: 100%;
+    height:60rpx;
+    text-align: center;
+    border:1px solid #D5D5D5;
+    border-radius: 10rpx;
+    background-color: #fbfbfc;
+    margin: 0 auto;
+    padding:25rpx 0
+}
+.more-btn-main image{
+    width: 60rpx;
+    height: 60rpx;
+}
+.send-more-box .more-btn-item .btn-txt{
+    color: #888888;
+    font-size: 24rpx;
+    margin:10rpx 0;
+}
+
+.send-more-result-main{
+    margin-top: 30rpx;
+}
+.send-more-result-main .file-box{
+    margin-right: 14rpx;
+    height: 160rpx;
+    width: 160rpx;
+    position: relative;
+    display: inline-block;
+}
+
+.send-more-result-main .file-box.deleting{
+    animation:deleting 0.5s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes deleting {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(0);
+    }
+}
+
+.send-more-result-main image{
+    height: 100%;
+    width: 100%;
+}
+.send-more-result-main .remove-icon{
+    position: absolute;
+    right: 5rpx;
+    top: 5rpx;
+}
+
+.send-more-result-main .file-box .img-box {
+    height: 100%;
+    width: 100%;
+}
+
