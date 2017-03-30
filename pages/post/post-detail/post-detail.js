@@ -8,6 +8,9 @@ Page({
   },
   onLoad: function (options) {
     var postId = options.id;
+    
+    this.postId = postId;
+
     this.dbPost = new DBPost(postId);
     this.postData = this.dbPost.getPostItemById().data;
     this.setData({
@@ -159,7 +162,7 @@ Page({
     return {
       title: this.postData.title,
       desc: this.postData.content,
-      path: "/pages/post/post-detail/post-detail"
+      path: "/pages/post/post-detail/post-detail?id="+this.postId
     }
   }
 
